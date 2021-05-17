@@ -1,0 +1,121 @@
+act_type: swish
+alpha: 0.25
+anchor_scale: 4.0
+apply_bn_for_resampling: true
+aspect_ratios:
+- 1.0
+- 2.0
+- 0.5
+autoaugment_policy: null
+backbone_config: null
+backbone_name: efficientnet-b4
+box_class_repeats: 4
+box_loss_weight: 50.0
+ckpt_var_scope: null
+clip_gradients_norm: 10.0
+conv_after_downsample: false
+conv_bn_act_pattern: false
+data_format: channels_last
+dataset_type: null
+delta: 0.1
+drop_remainder: true
+first_lr_drop_epoch: 200.0
+fpn_cell_repeats: 7
+fpn_config: null
+fpn_name: null
+fpn_num_filters: 224
+fpn_weight_method: null
+gamma: 1.5
+grad_checkpoint: false
+grid_mask: false
+heads:
+- object_detection
+img_summary_steps: null
+input_rand_hflip: false
+iou_loss_type: null
+iou_loss_weight: 1.0
+is_training_bn: true
+jitter_max: 1.0
+jitter_min: 1.0
+label_map:
+    1: flower2
+    2: flower7
+    3: flower5
+    4: mug3
+    5: mug4
+    6: mug1
+    7: wallet7
+    8: wallet10
+    9: wallet6
+    10: sodabottle2
+    11: sodabottle3
+    12: sodabottle4
+    13: book6
+    14: book4
+    15: book9
+    16: ringbinder6
+    17: ringbinder4
+    18: ringbinder5
+    19: bodylotion5
+    20: bodylotion8
+    21: bodylotion2
+    22: sprayer6
+    23: sprayer8
+    24: sprayer9
+    25: pencilcase6
+    26: pencilcase3
+    27: pencilcase5
+    28: hairclip8
+    29: hairclip2
+    30: hairclip6
+label_smoothing: 0.0
+learning_rate: 0.08
+loss_scale: null
+lr_decay_method: cosine
+lr_warmup_epoch: 1.0
+lr_warmup_init: 0.008
+map_freq: 5
+max_instances_per_image: 100
+max_level: 7
+mean_rgb:
+- 123.675
+- 116.28
+- 103.53
+min_level: 3
+mixed_precision: false
+model_optimizations: {}
+momentum: 0.9
+moving_average_decay: 0.9998
+name: efficientdet-d4
+nms_configs:
+    iou_thresh: null
+    max_nms_inputs: 0
+    max_output_size: 100
+    method: gaussian
+    pyfunc: false
+    score_thresh: 0.0
+    sigma: null
+num_classes: 31
+num_epochs: 300
+num_scales: 3
+optimizer: sgd
+poly_lr_power: 0.9
+positives_momentum: null
+regenerate_source_id: false
+sample_image: null
+second_lr_drop_epoch: 250.0
+seg_num_classes: 3
+separable_conv: true
+skip_crowd_during_training: true
+skip_mismatch: true
+stddev_rgb:
+- 58.395
+- 57.120000000000005
+- 57.375
+strategy: null
+survival_prob: null
+target_size: null
+tflite_max_detections: 100
+use_keras_model: true
+var_freeze_expr: null
+weight_decay: 4.0e-05
